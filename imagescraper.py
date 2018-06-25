@@ -18,7 +18,7 @@ def writeLineToFile(text, filename):
 def downloadPicture(url, pictureName):
 	urllib.request.urlretrieve(url, pictureName)
 
-filename = "pictureURLs.txt"
+filename = "imageURLs.txt"
 file = open(filename,"w")
 file.close()
 htmlString = fetchHTML(sys.argv[1])
